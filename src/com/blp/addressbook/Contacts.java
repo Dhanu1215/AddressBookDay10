@@ -7,18 +7,18 @@ class Contacts {
     private String city = " ";
     private String state = " ";
     private int zip = 0;
-    private long mobNum = 0;
-    private String emailId = " ";
+    private long phoneNumber = 0;
+    private String email = " ";
 
-    Contacts(String firstName, String lastName, String address, String city, String state, int zip, long mobNum, String emailId) {
+    Contacts(String firstName, String lastName, String address, String city, String state, int zip, long phoneNumber, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
         this.city = city;
         this.state = state;
         this.zip = zip;
-        this.mobNum = mobNum;
-        this.emailId = emailId;
+        this.phoneNumber = phoneNumber;
+        this.email = email;
     }
 
     public String getFirstName() {
@@ -69,26 +69,22 @@ class Contacts {
         this.zip = zip;
     }
 
-    public long getMobNum() {
-        return mobNum;
+    public long getPhoneNumber() {
+        return phoneNumber;
     }
 
-    public void setMobNum(long mobNum) {
-        this.mobNum = mobNum;
+    public void setPhoneNumber(long phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
-    public String getEmailId() {
-        return emailId;
+    public String getEmail() {
+        return email;
     }
 
-    public void setEmailId(String emailId) {
-        this.emailId = emailId;
+    public void setEmail(String emailId) {
+        this.email = emailId;
     }
 
-    public String toString() {
-        String contactDetails = firstName + lastName + address + city + state + zip + mobNum + emailId;
-        return contactDetails;
-    }
 
     void display() {
         System.out.println("First name = " + firstName);
@@ -97,7 +93,7 @@ class Contacts {
         System.out.println("City = " + city);
         System.out.println("State = " + state);
         System.out.println("Zip = " + zip);
-        System.out.println("Mobile number = " + mobNum);
-        System.out.println("Email-Id = " + emailId);
+        System.out.println("Mobile number = " + phoneNumber);
+        System.out.println("Email-Id = " + email);
     }
 }
